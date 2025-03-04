@@ -1,0 +1,172 @@
+/* Global Styles */
+body {
+    font-family: 'Work Sans', sans-serif !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #222 !important;
+    color: white !important;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif !important;
+}
+
+h1 {
+    font-size: 3.5em !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    text-align: center !important;
+    padding-top: 50px !important;
+    margin-bottom: 20px !important;
+}
+
+h2 {
+    font-size: 2.5em !important;
+    text-align: center !important;
+    margin-bottom: 10px !important;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: black;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background: rgba(0, 0, 0, 0.3); /* Transparent */
+    backdrop-filter: blur(10px); /* Blurred effect */
+    padding: 12px 0;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 10;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    color: #FFD700;
+}
+
+h3 {
+    font-size: 1.8rem !important;
+    margin-bottom: 15px !important;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('headshot.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 80vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: center !important;
+    color: white !important;
+    padding: 0 20px !important;
+    position: relative !important;
+    object-fit: cover !important;
+}
+
+.hero-title {
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem !important;
+}
+
+.divider {
+    background-color: white !important; /* Divider color */    
+    height: 150px !important; /* Thickness of the divider */    
+    margin-top: 2px !important; /* Space between hero and first section */    
+    margin-bottom: 20px !important; /* Extra space before cards */
+}
+
+
+
+
+/* Impact Section */
+.impact-section, .legacy-section, .philanthropy-section, .flip-section {
+    padding: 50px 20px !important;
+    display: flex !important;
+    justify-content: space-around !important;
+    flex-wrap: wrap !important;
+    gap: 30px !important;
+}
+
+.impact-item, .legacy-item, .philanthropy-item, .flip-item {
+    background-color: #333 !important;
+    padding: 30px !important;
+    width: 30% !important;
+    border-radius: 10px !important;
+    text-align: center !important;
+    overflow: hidden !important; /* Ensures the image stays inside its container */
+}
+
+.impact-item img, .legacy-item img, .philanthropy-item img, .flip-item img {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover !important; /* Ensures images are responsive */
+    object-position: center !important;
+    max-height: 200px !important; /* Makes sure images don't stretch beyond their intended size */
+    border-radius: 8px !important; /* Slight border-radius to match the container styling */
+    margin-bottom: 20px !important;
+}
+
+/* Footer */
+footer {
+    text-align: center !important;
+    padding: 20px !important;
+    background-color: #222 !important;
+    color: white !important;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .flip-container {
+        flex-direction: column !important;
+    }
+
+    .flip-item {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+
+    .impact-item, .legacy-item, .philanthropy-item {
+        width: 100% !important;
+    }
+
+    .hero-title {
+        font-size: 2.5rem !important;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem !important;
+    }
+}
